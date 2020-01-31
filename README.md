@@ -3,8 +3,8 @@ Building a website with React, Flask, RestFUL API for dynamic visualization of m
 
 ### Used Frameworks:
 
-##React: 
-#libraries:
+## React: 
+### libraries:
 Axios
 MaterialUI
 Bootstrap
@@ -12,5 +12,5 @@ React-Map-GL: https://uber.github.io/react-map-gl/#/
 Typewriter
 
 
-##Flask
-##RestFUL API
+## Flask
+## RestFUL API
