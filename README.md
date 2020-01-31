@@ -6,8 +6,8 @@ Building a website with React, Flask, RestFUL API for dynamic visualization of m
 
 ## Used Frameworks:
 
-## React: 
-### libraries:
+### React: 
+#### libraries:
 - [Axios](https://github.com/axios/axios)
 - [MaterialUI](https://material-ui.com/)
 - [Bootstrap](https://react-bootstrap.github.io/)
@@ -15,5 +15,5 @@ Building a website with React, Flask, RestFUL API for dynamic visualization of m
 - [Typewriter](https://www.npmjs.com/package/typewriter-effect)
 
 
-## Flask
-## RestFUL API
+### Flask
+### RestFUL API
