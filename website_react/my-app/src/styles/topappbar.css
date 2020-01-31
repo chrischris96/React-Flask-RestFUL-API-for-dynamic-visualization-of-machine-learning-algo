@@ -1,0 +1,38 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container, .container-md, .container-sm {
+    max-width: 100%;
+}
+
+.row {
+    background: black
+}
+
+.mdc-top-app-bar__row{
+    background: black
+}
+
+.fullsizebar{
+    padding: 0%;
+}
+
+#icon {
+    border-radius: 50%;
+    padding: 0px;
+}
+
+#icon:hover {
+    opacity: 80%;
+}
+
+#icon_logo {
+    width: 160%;
+    filter: invert(100%);
+}
+
+#icon_linkedin {
+    width: 160%;
+}

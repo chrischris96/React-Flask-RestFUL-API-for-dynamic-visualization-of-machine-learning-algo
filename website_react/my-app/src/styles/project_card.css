@@ -1,0 +1,369 @@
+.col_cards{
+  margin: auto;
+  padding: 0 5% 0% 5%;
+}
+
+.somecardmedia{
+  width: 100%
+}
+
+.mdc-card__media{
+background-color: black;
+
+}
+
+.cardWrapper {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  color: white;
+  text-shadow: -.3px 0 black, 0 .3px black, .3px 0 black, 0 -.3px black;
+
+}
+
+.Typewriter__cursor{
+  color: tomato;
+  text-shadow: -.3px 0 tomato, 0 .3px tomato, .3px 0 tomato, 0 -.3px tomato;
+
+  
+}
+
+
+/* For Mobile */
+@media all and (max-width: 540px) {
+    h3{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+}
+
+/* For Tablets */
+@media all and (min-width: 540px) and (max-width: 1600px) {
+    h3{
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 5vw;
+}
+}
+
+.smallercard{
+  width: 100%;
+/*   -ms-transform: translateX(15%);
+  transform: translateX(15%); */
+  
+
+}
+
+.mdc-card{
+  border-radius: 0% !important;
+}
+
+.fullsizecard{
+  padding:0%;
+}
+
+.parallextext {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-left: 5%;
+
+}
+
+#parallexdetailsleft1 {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-left: 5%;
+  bottom: -40% !important;
+  color: white;
+  
+}
+
+#parallexdetailsleft2 {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-left: 5%;
+  bottom: -210% !important;
+  color: white;
+  text-shadow: -.3px 0 black, 0 .3px black, .3px 0 black, 0 -.3px black;
+  
+}
+
+#parallexdetailsleft3 {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-left: 5%;
+  bottom: -370% !important;
+  color: white;
+  text-shadow: -.3px 0 black, 0 .3px black, .3px 0 black, 0 -.3px black;
+
+  
+}
+
+#parallexdetailsleft4 {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-left: 5%;
+  bottom: -530% !important;
+  color: white;
+  text-shadow: -.3px 0 black, 0 .3px black, .3px 0 black, 0 -.3px black;
+
+  
+}
+
+
+#parallexdetailsleft5 {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-left: 5%;
+  bottom: -690% !important;
+  color: white;
+  text-shadow: -.3px 0 black, 0 .3px black, .3px 0 black, 0 -.3px black;
+
+  
+}
+
+.parallax_black1 {
+  /* Full height */
+  height: 40%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  z-index: 10;
+
+
+}
+
+.parallax_black2 {
+  /* Full height */
+  height: 120%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  z-index: 10;
+
+
+}
+
+
+
+/* .parallax_black_box{
+  height: 600px;
+} */
+
+.parallaxcell1{
+
+   /* The image used */
+  background-image: url(/static/media/cellcount.2ea00254.gif) ;
+
+  /* Full height */
+  height: 40%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 20;
+
+
+
+}
+
+.parallaxcell2{
+
+   /* The image used */
+  background-image: url(/static/media/cellcount.2ea00254.gif) ;
+
+  /* Full height */
+  height: 130%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 20;
+
+
+
+}
+
+.parallaxintel1 {
+   /* The image used */
+  background-image: url(/static/media/Intel_yam.cb145341.jpg) ;
+
+  /* Full height */
+  height: 40%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 30;
+
+
+}
+
+.parallaxintel2 {
+   /* The image used */
+  background-image: url(/static/media/Intel_yam.cb145341.jpg) ;
+
+  /* Full height */
+  height: 120%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 30;
+
+
+}
+
+
+
+.parallax1 {
+  /* The image used */
+  background-image: url(/static/media/journal_club.aad91049.jpg) ;
+
+  /* Full height */
+  height: 40%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 40;
+  transition: opacity 300ms ease-in-out;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+
+
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url(/static/media/journal_club.aad91049.jpg) ;
+
+  /* Full height */
+  height: 120%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 40;
+
+
+}
+
+.parallaxibm1{
+  /* The image used */
+  background-image: url(/static/media/IBMEB.a5daf5c3.jpg) ;
+
+  /* Full height */
+  height: 40%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 50;
+
+
+}
+
+.parallaxibm2{
+  /* The image used */
+  background-image: url(/static/media/IBMEB.a5daf5c3.jpg) ;
+
+  /* Full height */
+  height: 120%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: bisque;
+  z-index: 50;
+
+
+}
+
+
+.expansion{
+  height: -webkit-fill-available;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 5%;
+  right:50%;
+  color: white;
+  font-size: -webkit-xxx-large;
+}
+
+#pcenter{
+  right:40.5%;
+  bottom: 10%;
+  font-size: xx-large;
+  position: fixed;
+  color: black;
+}
+
+#pcenter:hover{
+  right:49%;
+  bottom: 10%;
+  font-size: xx-small;
+  position: fixed;
+  color: lightgray;
+}
+
+.sensor_icons {
+  color: darkred !important;
+}
+
+#station_marker{
+  color: white;
+  font-size: xx-small;
+}
