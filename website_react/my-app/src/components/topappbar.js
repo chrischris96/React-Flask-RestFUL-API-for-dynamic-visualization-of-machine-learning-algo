@@ -42,14 +42,11 @@ class Header  extends React.Component {
 
     renderIcon() {
         if (this.state.renderIcon) {
-            console.log(this.state.renderIcon)
-            console.log('1')
 
             return (<MaterialIcon onClick={this.onClickphoto}
                 icon='favorite_border'
             />);
         } else {
-            console.log('2')
 
             return (<img onClick={this.onClickHeart} id="icon" src={Icon} alt="profile pic"></img>);
         } 

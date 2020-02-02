@@ -212,3 +212,11 @@ background-color: black;
   color: white;
   font-size: xx-small;
 }
+
+.mapboxgl-popup.mapboxgl-popup-anchor-top {
+    opacity: 0%;
+}
+
+.mapboxgl-popup.mapboxgl-popup-anchor-top:hover {
+    opacity: 100%;
+}

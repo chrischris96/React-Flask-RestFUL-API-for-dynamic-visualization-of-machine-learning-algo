@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { render } from 'react-dom';
 // import MapGL from 'react-map-gl';
-import ReactMapGL, { NavigationControl} from 'react-map-gl';
+import ReactMapGL, { Popup, NavigationControl } from 'react-map-gl';
 import { Marker } from 'react-map-gl';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MaterialIcon from '@material/react-material-icon';
@@ -27,7 +27,8 @@ class ProjectClass extends Component {
             },
             loading: true,
             error: "",
-            data: null
+            data: null,
+            showPopup: true,
         };
     }
 
@@ -37,7 +38,6 @@ class ProjectClass extends Component {
             .get('http://127.0.0.1:5000/stations')
 
             .then(result => {
-                console.log(result);
                 this.setState({
                     data: result.data,
                     loading: false,
@@ -50,33 +50,45 @@ class ProjectClass extends Component {
                     // objects cannot be used as a react child
                     // -> <p>{error}</p> would throw otherwise
                     error: `${error}`,
-                    loading: false
+                    loading: true
                 });
             });
     }
     componentDidMount() {
         this.getStations();
+
     }
     
     render() {
         const { viewport } = this.state;
-        
-        console.log(this.state.data)
+        const { showPopup } = this.state;
+
         if (this.state.data){
             const station_dict = this.state.data
-            console.log(station_dict["station0"] )
 
             var indents = [];
+            var popups_stat = [];
 
             for (const [key, value] of Object.entries(station_dict)) {
-                console.log(key,value);
-                console.log(value["latitude"], value["longitude"]);
-                
+
                 indents.push(
                     <Marker latitude={value["latitude"]} longitude={value["longitude"]} offsetLeft={-20} offsetTop={-10}>
                         <MaterialIcon className='sensor_icons' icon='where_to_vote' />
                         <p id="station_marker">{key}</p>
                     </Marker>
+                )
+
+                popups_stat.push(
+                        <Popup
+                            latitude={value["latitude"]}
+                            longitude={value["longitude"]}
+                            closeButton={false}
+                            closeOnClick={false}
+                            onClose={() => this.setState({ showPopup: false })}
+                            anchor="top" >
+                            <div>You are here</div>
+                        </Popup>
+
                 )
 
             }
@@ -94,6 +106,7 @@ class ProjectClass extends Component {
                     <div style={{ position: 'absolute', right: 0 }}>
                         <NavigationControl />
                     </div>
+                        {showPopup && popups_stat}
                 </ReactMapGL>
             );
         } else {
