@@ -214,9 +214,33 @@ background-color: black;
 }
 
 .mapboxgl-popup.mapboxgl-popup-anchor-top {
-    opacity: 0%;
+  opacity: 0;
 }
 
 .mapboxgl-popup.mapboxgl-popup-anchor-top:hover {
-    opacity: 100%;
+  opacity: 100%;
+  width: 450px;
+  height: 200px;
+  opacity: 1;
 }
+
+.mapboxgl-popup-content{
+  padding: 0% !important;
+  background: rgb(12, 11, 11) !important;
+}
+
+iframe {
+  border-width: 0px !important;
+}
+
+.popnames {
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: rgb(12, 11, 11) !important;
+}
+
+

@@ -7,7 +7,7 @@ from madrid_analysis import data_stations, gen_user
 path = r'./air-quality-madrid/stations.csv'
 
 madrid_stations = data_stations(path)
-lon, lat,STATIONS = gen_user(madrid_stations)
+lon, lat, hood, STATIONS = gen_user(madrid_stations)
 
 app = Flask(__name__)
 CORS(app)
