@@ -13,7 +13,7 @@
     "@material/react-top-app-bar": "^0.15.0",
     "@material/top-app-bar": "^4.0.0",
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "material-components-web": "^4.0.0",
     "react": "^16.12.0",
